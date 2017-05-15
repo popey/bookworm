@@ -1,0 +1,14 @@
+
+name: bookworm
+version: 'master'
+summary: This is not a real snap, just testing snapcraft.
+description: |
+  This is not a real snap, just testing snapcraft. 
+
+grade: devel # must be 'stable' to release into candidate/stable channels
+confinement: devmode # use 'strict' once you have the right plugs and slots
+
+parts:
+  bookworm:
+    plugin: cmake
+    source: .
